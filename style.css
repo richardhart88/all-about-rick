@@ -10,31 +10,39 @@ body {
  header {
     background: #cfebcf;
     color: rgb(90, 87, 87); 
+    border: 0.5px solid black;
     margin: 8px;
     padding: 4px;
 }
 
 h1 {
-      margin-left: 2rem;
+      margin-left: 1rem;
 }
 
+img {
+    float: left;
+    max-width: 22%;
+    min-width: 22%;
+    padding: 10px;
+
+}
 .navigation {
     background-color: rgb(152, 154, 156);
+    border: 0.5px solid black;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 8px;
+    padding: 8px;
 }
 
 .links {
     display: inline-block;
     margin-right: 20px;
-    width: 18%;
     font-weight: bolder;
 }
 
-.employer {
+.entity {
     background:rgb(230, 223, 223);
-    border-style: 3px solid rgb(10, 179, 66);
+    border: 0.5px solid black;
     margin: 8px;
     padding: 30px;
 
