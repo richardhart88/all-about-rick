@@ -7,6 +7,7 @@ body {
     margin: auto;
     background-image: url("photos/so-vibrant.jpg");
     background-size: 100%;
+    background-attachment: fixed;
 }
   
  header {
@@ -30,7 +31,6 @@ img {
     list-style-type: none;
     margin: 8px;
     padding: 8px;
-    
 }
 
 .links {
@@ -44,7 +44,6 @@ img {
 }
 
 .entity {
-
     margin: 8px;
     padding: 30px;
     background-image: url("photos/gray-background.jpg");
@@ -56,7 +55,6 @@ img {
 .content-card {
     color: black !important;
     opacity: 1 !important;
-    
 }
 
 .company {
