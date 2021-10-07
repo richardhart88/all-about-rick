@@ -21,10 +21,10 @@ h1 {
 }
 
 img {
-    float: left;
+    float: top;
     width: 11rem;
-    padding: 10px;
     display: relative;
+    filter: grayscale(95%);
 
 }
 .navigation {
