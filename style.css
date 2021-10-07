@@ -5,33 +5,32 @@ body {
     font-family: 'Roboto', sans-serif;
     max-width: 960px;
     margin: auto;
-    background-image: url("gray-background.jpg");
+    background-image: url("photos/so-vibrant.jpg");
     background-size: 100%;
 }
   
  header {
-    background: none;
+    background: rgb(152, 154, 156, 0.6);
     color: rgb(233, 227, 227); 
-    margin: 0px;
+    margin: 8px;
     padding: 0px;
 }
 
-h1 {
-      margin-left: 1rem;
+h1, h2 {
+    margin-left: 1rem;  
 }
 
 img {
     float: top;
     width: 11rem;
     display: relative;
-    filter: grayscale(95%);
-
 }
 .navigation {
     background-color: rgb(152, 154, 156, 0.3);
     list-style-type: none;
     margin: 8px;
     padding: 8px;
+    
 }
 
 .links {
@@ -45,14 +44,23 @@ img {
 }
 
 .entity {
-    background:rgb(230, 223, 223, 0.5);
-    border: 0.5px solid black;
+
     margin: 8px;
     padding: 30px;
+    background-image: url("photos/gray-background.jpg");
+    z-index: -1;
+    background-color: rgba(255,255,255,0.4);
+    background-blend-mode: lighten;
+    background-size: 100%;
+}
+.content-card {
+    color: black !important;
+    opacity: 1 !important;
+    
 }
 
 .company {
-      font-weight: bolder;
+    font-weight: bolder;
 }
 
 .position {
@@ -60,12 +68,12 @@ img {
 }
 
 li {
-      width: 80%;
+    width: 80%;
 }
 
 .fa {
-    padding: 20px;
-    font-size: 30px;
+    padding: 15px;
+    font-size: 35px;
     width: 30px;
     text-align: center;
     text-decoration: none;
@@ -76,11 +84,16 @@ li {
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+    background: #3B5998;
+    color: white;
 }
 
 .fa-linkedin {
     background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #222222;
     color: white;
 }
