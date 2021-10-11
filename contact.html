@@ -15,8 +15,6 @@
         <a href="employment.html" class="links">Employment History</a> 
         <a href="contact.html" class="links">Contact Me</a>
     </div>
-    <header>
-    </header>
     <section class="entity">
         <h2>Contact Information</h2>    
             <strong>Address</strong></br>
@@ -35,19 +33,20 @@
             <a href="https://github.com/richardhart88" target="_blank" class="fa fa-github"></a>
         </span>
     </section>
-    <div>
-        <form class="entity">
+    <section>
+        <form action="https://formsubmit.co/tuba1388@yahoo.com" method="POST" class="entity">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
 
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="firstname" placeholder="Your last name...">
+            <input type="text" id="lname" name="firstname" placeholder="Your last name..." required>
 
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Shoot me a message!" style="height:200px"></textarea>
+            <textarea id="subject" name="subject" placeholder="Shoot me a message!" style="height:200px" required></textarea>
 
             <input type="submit" value="Submit">
         </form>
-    </div>
+    </section>
+    <script src="index.js"></script>
 </body>
 </html>
