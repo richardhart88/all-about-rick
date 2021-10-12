@@ -1,9 +1,5 @@
-const profile = document.getElementsById("profile-pic")
+window.addEventListener('scroll', function(){
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
 
-function move() {
-    const incrementer = window.scrollY
-
-    profile.style.bottom = 50 + incrementer * 0.1 + '%'
-}
-
-window.addEventListener('scroll', move)
