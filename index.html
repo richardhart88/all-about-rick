@@ -9,8 +9,9 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">My Resume</a>
+        <a href="#home" class="logo">My Resume</a>
         <div class="toggle"></div>
+        <nav>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -18,11 +19,12 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        </nav>
     </header>
 
     <section class="banner" id="home">
         <div class="textBx">
-            <h2>Hello, I'm<br><span>Richard C. Hart.</span></h2>
+            <h2>Hello, I'm<br><span>Richard C. Hart</span></h2>
             <h3>I'm a Full-stack Web Development Student.</h3>
             <a href="#about" class="btn">About Me</a>
         </div>
@@ -190,8 +192,8 @@
                 </div>
             </div>
             <div class="formBx">
+                <h3>Message Me</h3>
                 <form>
-                    <h3>Message Me</h3>
                     <input type="text" name="" placeholder="Full Name">
                     <input type="email" name="" placeholder="Email">
                     <textarea placeholder="Your Message..."></textarea>
@@ -200,6 +202,91 @@
             </div>
         </div>
     </section>
+
+    <!-- <section>
+        <form action="results.html" method="GET" enctype="multiport/form-data">
+            <div>
+                <label>Name</label>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Enter email here...">
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" min="1" max="99" step="1">
+            </div>
+            <div>
+                <label for="date">Birthdate</label>
+                <input type="date" name="date" id="date" min="2021-10-14">
+            </div>
+            <div>
+                Favorite Food
+                <div>
+                    <label for="banana">Banana</label>
+                    <input type="checkbox" name="banana" id="banana">
+                </div>
+                <div>
+                    <label for="apple">Apple</label>
+                    <input type="checkbox" name="apple" id="apple">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </div>
+                <div>
+                    <label for="undisclosed">Prefer not to say</label>
+                    <input type="radio" name="gender" id="undisclosed" value="undisclosed">
+                </div>
+            </div>
+            <div>
+                <label for="eyeColor">Eye Color</label>
+                <select name="eyecolor" id="eyeColor">
+                    <option value="Green">Green</option>
+                    <option label="Red" value="Red"></option>
+                </select>
+            </div>
+            <div>
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+            <div>
+                <input type="hidden" name="hidden" value="hi">
+            </div>
+            <div>
+                <label for="file">File</label>
+                <input id="file" type="file" name="file">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url">
+            </div>
+            <div>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div>
+                <label>Password</label>
+                <input  type="password" name="password" placeholder="Enter your password here..." required>
+            </div>
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section> -->
+
 
     <script src="index.js" type="text/javascript"></script>
 </body>
