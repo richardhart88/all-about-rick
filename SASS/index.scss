@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 70px 20px 20px 20px;
+    min-height: 100vh;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:before{
+      content: '';
+      background: url(../photos/gray-background.jpg);
+      background-size: cover;
+      background-position: right;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.8;
+    }
+}
+
+.textBx {
+    position: relative;
+}
+
+.home h2 {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.3em;
+    span{
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+}
+
+.home h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: #ccc;
+    display: inline-block;
+    color: black;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 25px;
+    background:rgb(83, 83, 83, 0.1);
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    ul {
+      position: relative;
+      display: flex;
+      justify-content: flex-end; 
+      margin-top: -5px;
+      list-style: none;
+      li{
+        a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        margin: 0 15px;
+        color: #fff;
+        }
+      }
+    }
+  }
+.sticky {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px 25px;
+    box-shadow: 0 5px 20px rgba(5, 3, 3, 0.1);
+}
+
+.logo {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-left: 15px;
+}
+
+.sticky .logo {
+    color: #111;
+}
+
+
+header.sticky ul li a {
+    text-decoration: none;
+    color: #111;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #111;
+    position: relative;
+}
+
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+    min-width: 300px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBx {
+    padding: 40px;
+    margin: 10px;
+    background: rgba(160, 159, 159, 0.7);
+    position: relative;
+}
+
+.contentBx h3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.about {
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background: url(../photos/hiking.jpg);
+      background-size: cover;
+      background-position: right;
+      background-repeat: none;
+      opacity: 0.6;
+    }
+}
+
+.w50 {
+    max-width: 70%
+}
+
+.heading.white {
+    color: #fff;
+}
+/* education section */
+.education {
+    background: rgba(17, 17, 17, 0.8);
+    .content{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      flex-direction: row;
+      .educationBx{
+        position: relative;
+        padding: 40px 20px;
+        background: rgb(83, 83, 83);
+        color: rgb(226, 225, 225);
+        max-width: 300px;
+        margin: 20px;
+        text-align: center;
+        transition: 0.5s;
+        &:hover{
+          background: rgb(63, 79, 85)
+        }
+        img {
+          max-width: 160px;
+        }
+      }
+    }
+}
+
+/* experience section */
+.work .content {
+    display: grid;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    .workBx {
+      grid-column: 1 / 3;
+      background:rgb(83, 83, 85);
+      padding: 20px;
+      max-width: 1000px;
+      margin: 8px;
+      text-align: left;
+      color: rgb(221, 221, 221);
+      ul {
+        padding: 0 0 0 20px;
+    }
+  }
+}
+/* contact section */
+.contact {
+    background: rgba(17, 17, 17, 0.8);
+}
+
+.formBx {
+    min-width: 50%;
+    color: rgb(216, 216, 216);
+    form {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+.formBx form h3, 
+.contactInfoBx h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBx form input,
+.formBx form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+
+.formBx form textarea {
+    min-height: 200px;
+}
+
+.formBx form input::placeholder, 
+.formBx form textarea::placeholder {
+    color: #999;
+}
+
+.formBx form input[type="submit"] {
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactInfo {
+    max-width: 100%;
+}
+
+.contactInfoBx {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contactInfoBx .box {
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.contactInfoBx .box .text {
+    display: flex;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 300;
+}
+
+.contactInfoBx .box .text h3 {
+    font-weight: 800;
+    color: #2196f3;
+    padding-right: 10px;
+    float: left;
+}
+.social-media{
+  margin-top: 30px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-github {
+  background: #000;
+  color: white;
+}
